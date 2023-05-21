@@ -3,7 +3,7 @@ const url = "https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/
 d3.json(url).then(function (data) {
     console.log(data);
     
-    // Get subject ID's and populate the dropdown
+    // Get subject IDs and populate dropdown
     let dropdownList = d3.select("#selDataset");
     let subjectID = data.names;
     subjectID.forEach((id) => {
@@ -79,7 +79,7 @@ d3.json(url).then(function (data) {
         d3.select('#sample-metadata').append("h6").text(`${key}: ${value}`);
       });
     
-      //Get data for selected subject ID
+      //Get data for selected subject IDs
       let otuData = data.samples;
       let subjectOtuData = otuData.filter(subject => subject.id == selectedSubject);
       let sampleValues = subjectOtuData[0].sample_values;
