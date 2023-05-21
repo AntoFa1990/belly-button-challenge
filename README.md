@@ -1,2 +1,2 @@
 # belly-button-challenge
-Use case for an interactive dashboard.
+Interactive Dashboard can be found here: https://antofa1990.github.io/belly-button-challenge/
